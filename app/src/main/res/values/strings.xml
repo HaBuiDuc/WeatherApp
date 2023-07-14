@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">WeatherApp</string>
+    <string name="image_description">image status img</string>
+    <string name="percentage">%</string>
+    <string name="speed_unit">km/h</string>
+    <string name="today">Today</string>
+    <string name="celsius_degree">°ᶜ</string>
+</resources>
