@@ -91,12 +91,11 @@ class WeatherFragment : Fragment() {
                 )
 
                 val listSize = fiveDayWeather.weatherByHour.size
-                weeklyBriefAdapter = WeeklyBriefAdapter(fiveDayWeather.weatherByHour.slice(3 .. listSize step 8))
+                weeklyBriefAdapter = WeeklyBriefAdapter(fiveDayWeather.weatherByHour.slice(3 until listSize step 8))
                 weeklyRv.adapter = weeklyBriefAdapter
                 weeklyRv.layoutManager = LinearLayoutManager(requireContext())
             }
         }
-
     }
 
     @SuppressLint("MissingPermission")
